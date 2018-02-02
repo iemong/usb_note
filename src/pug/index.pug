@@ -1,0 +1,29 @@
+extends /layout/_default-layout
+
+prepend config-block
+  - page_name = ''
+
+//- append stylesheet-block
+
+prepend javascript-block
+  script(src='https://www.gstatic.com/firebasejs/4.9.1/firebase.js')
+  script.
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyBZqj5mk6EZDtOQHClJGBb3l9Nw0FAqdpA",
+    authDomain: "firabasefire.firebaseapp.com",
+    databaseURL: "https://firabasefire.firebaseio.com",
+    projectId: "firabasefire",
+    storageBucket: "firabasefire.appspot.com",
+    messagingSenderId: "616673046185"
+    };
+    firebase.initializeApp(config);
+
+block content-block
+  button.js-button access to USB
+  .content.js-content
+    .js-textarea.textarea
+    .js-send-button.send-button
+      img(src="./img/arrow.png", alt="")
+    input.js-text-data(type="text")
+

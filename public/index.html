@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- meta-->
+    <title>kayac-html5-starter</title>
+    <meta name="description" content="kayac-html5-starter web page.">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <!-- smartphone meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <!-- ogp-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="kayac-html5-starter">
+    <meta property="og:site_name" content="kayac-html5-starter">
+    <meta property="og:description" content="kayac-html5-starter web page.">
+    <meta property="og:locale" content="ja_JP">
+    <!-- twitter card-->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="kayac-html5-starter">
+    <meta property="twitter:description" content="kayac-html5-starter web page.">
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="/css/style.css?v=1">
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="js-button">access to USB</button>
+      <div class="content js-content">
+        <div class="js-textarea textarea"></div>
+        <div class="js-send-button send-button"><img src="./img/arrow.png" alt=""></div>
+        <input class="js-text-data" type="text">
+      </div>
+    </div>
+    <!-- javascript-->
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyBZqj5mk6EZDtOQHClJGBb3l9Nw0FAqdpA",
+      authDomain: "firabasefire.firebaseapp.com",
+      databaseURL: "https://firabasefire.firebaseio.com",
+      projectId: "firabasefire",
+      storageBucket: "firabasefire.appspot.com",
+      messagingSenderId: "616673046185"
+      };
+      firebase.initializeApp(config);
+      
+    </script>
+    <script src="/js/script.js?v=1"></script>
+  </body>
+</html>
